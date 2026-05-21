@@ -8,8 +8,26 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"LS_SFTP_ADLS_PARQ_accountKey": {
+			"value": ""
+		},
+		"LS_SFTP_SINK_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_SFTP_SINK_PARQUT_accountKey": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://adlsdevvbrow09.dfs.core.windows.net"
+		},
+		"LS_SFTP_ADLS_PARQ_properties_typeProperties_url": {
+			"value": "https://adlsdevvbrow09.dfs.core.windows.net/"
+		},
+		"LS_SFTP_SINK_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"LS_SFTP_SINK_PARQUT_properties_typeProperties_url": {
+			"value": "https://adlsdevvbsource09.dfs.core.windows.net/"
 		},
 		"RestApiService1_properties_typeProperties_url": {
 			"value": "https://retoolapi.dev/QQnW7W/data"

@@ -11,9 +11,33 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
+		"LS_SFTP_ADLS_PARQ_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SFTP_ADLS_PARQ'"
+		},
+		"LS_SFTP_SINK_PARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SFTP_SINK_PARQUET'"
+		},
+		"LS_SFTP_SINK_PARQUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SFTP_SINK_PARQUT'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevvbrow09.dfs.core.windows.net"
+		},
+		"LS_SFTP_ADLS_PARQ_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevvbrow09.dfs.core.windows.net/"
+		},
+		"LS_SFTP_SINK_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"LS_SFTP_SINK_PARQUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevvbsource09.dfs.core.windows.net/"
 		},
 		"RestApiService1_properties_typeProperties_url": {
 			"type": "string",
@@ -49,8 +73,26 @@
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
 					},
+					"LS_SFTP_ADLS_PARQ_accountKey": {
+						"value": "[parameters('LS_SFTP_ADLS_PARQ_accountKey')]"
+					},
+					"LS_SFTP_SINK_PARQUET_accountKey": {
+						"value": "[parameters('LS_SFTP_SINK_PARQUET_accountKey')]"
+					},
+					"LS_SFTP_SINK_PARQUT_accountKey": {
+						"value": "[parameters('LS_SFTP_SINK_PARQUT_accountKey')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"LS_SFTP_ADLS_PARQ_properties_typeProperties_url": {
+						"value": "[parameters('LS_SFTP_ADLS_PARQ_properties_typeProperties_url')]"
+					},
+					"LS_SFTP_SINK_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('LS_SFTP_SINK_PARQUET_properties_typeProperties_url')]"
+					},
+					"LS_SFTP_SINK_PARQUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_SFTP_SINK_PARQUT_properties_typeProperties_url')]"
 					},
 					"RestApiService1_properties_typeProperties_url": {
 						"value": "[parameters('RestApiService1_properties_typeProperties_url')]"
