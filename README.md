@@ -1,2 +1,2 @@
 # Azure-Data-Factory-
-ADF pipeline to move from on premise to Azure storage
+ADF pipeline to move data from RestApi to  Azure Data lake  storage Gen2 row location
