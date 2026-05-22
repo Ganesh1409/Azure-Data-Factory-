@@ -1,0 +1,12 @@
+{
+	"name": "DS_LKPUP_SQLSRV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_LKPup_sqlsrv_adls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
