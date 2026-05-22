@@ -8,6 +8,12 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"DS_SINK_SQLSRV_ADLS_PRQT_accountKey": {
+			"value": ""
+		},
+		"LS_LKPup_sqlsrv_adls_password": {
+			"value": ""
+		},
 		"LS_SFTP_ADLS_PARQ_accountKey": {
 			"value": ""
 		},
@@ -17,8 +23,26 @@
 		"LS_SFTP_SINK_PARQUT_accountKey": {
 			"value": ""
 		},
+		"LS_SINK_SQLSRV_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_source_Sqlsrv_adls_password": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://adlsdevvbrow09.dfs.core.windows.net"
+		},
+		"DS_SINK_SQLSRV_ADLS_PRQT_properties_typeProperties_url": {
+			"value": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"LS_LKPup_sqlsrv_adls_properties_typeProperties_server": {
+			"value": "LAPTOP-EGV8I2D2"
+		},
+		"LS_LKPup_sqlsrv_adls_properties_typeProperties_database": {
+			"value": "Vbadeproject"
+		},
+		"LS_LKPup_sqlsrv_adls_properties_typeProperties_userName": {
+			"value": "sa"
 		},
 		"LS_SFTP_ADLS_PARQ_properties_typeProperties_url": {
 			"value": "https://adlsdevvbrow09.dfs.core.windows.net/"
@@ -28,6 +52,18 @@
 		},
 		"LS_SFTP_SINK_PARQUT_properties_typeProperties_url": {
 			"value": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"LS_SINK_SQLSRV_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"LS_source_Sqlsrv_adls_properties_typeProperties_server": {
+			"value": "LAPTOP-EGV8I2D2"
+		},
+		"LS_source_Sqlsrv_adls_properties_typeProperties_database": {
+			"value": "Vbadeproject"
+		},
+		"LS_source_Sqlsrv_adls_properties_typeProperties_userName": {
+			"value": "sa"
 		},
 		"RestApiService1_properties_typeProperties_url": {
 			"value": "https://retoolapi.dev/QQnW7W/data"

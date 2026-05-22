@@ -11,6 +11,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
+		"DS_SINK_SQLSRV_ADLS_PRQT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'DS_SINK_SQLSRV_ADLS_PRQT'"
+		},
+		"LS_LKPup_sqlsrv_adls_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_LKPup_sqlsrv_adls'"
+		},
 		"LS_SFTP_ADLS_PARQ_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_SFTP_ADLS_PARQ'"
@@ -23,9 +31,33 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_SFTP_SINK_PARQUT'"
 		},
+		"LS_SINK_SQLSRV_ADLS_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SINK_SQLSRV_ADLS'"
+		},
+		"LS_source_Sqlsrv_adls_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_source_Sqlsrv_adls'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevvbrow09.dfs.core.windows.net"
+		},
+		"DS_SINK_SQLSRV_ADLS_PRQT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"LS_LKPup_sqlsrv_adls_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "LAPTOP-EGV8I2D2"
+		},
+		"LS_LKPup_sqlsrv_adls_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "Vbadeproject"
+		},
+		"LS_LKPup_sqlsrv_adls_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sa"
 		},
 		"LS_SFTP_ADLS_PARQ_properties_typeProperties_url": {
 			"type": "string",
@@ -38,6 +70,22 @@
 		"LS_SFTP_SINK_PARQUT_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"LS_SINK_SQLSRV_ADLS_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"LS_source_Sqlsrv_adls_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "LAPTOP-EGV8I2D2"
+		},
+		"LS_source_Sqlsrv_adls_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "Vbadeproject"
+		},
+		"LS_source_Sqlsrv_adls_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sa"
 		},
 		"RestApiService1_properties_typeProperties_url": {
 			"type": "string",
@@ -73,6 +121,9 @@
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
 					},
+					"DS_SINK_SQLSRV_ADLS_PRQT_accountKey": {
+						"value": "[parameters('DS_SINK_SQLSRV_ADLS_PRQT_accountKey')]"
+					},
 					"LS_SFTP_ADLS_PARQ_accountKey": {
 						"value": "[parameters('LS_SFTP_ADLS_PARQ_accountKey')]"
 					},
@@ -82,8 +133,20 @@
 					"LS_SFTP_SINK_PARQUT_accountKey": {
 						"value": "[parameters('LS_SFTP_SINK_PARQUT_accountKey')]"
 					},
+					"LS_SINK_SQLSRV_ADLS_accountKey": {
+						"value": "[parameters('LS_SINK_SQLSRV_ADLS_accountKey')]"
+					},
+					"LS_LKPup_sqlsrv_adls_password": {
+						"value": "[parameters('LS_LKPup_sqlsrv_adls_password')]"
+					},
+					"LS_source_Sqlsrv_adls_password": {
+						"value": "[parameters('LS_source_Sqlsrv_adls_password')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"DS_SINK_SQLSRV_ADLS_PRQT_properties_typeProperties_url": {
+						"value": "[parameters('DS_SINK_SQLSRV_ADLS_PRQT_properties_typeProperties_url')]"
 					},
 					"LS_SFTP_ADLS_PARQ_properties_typeProperties_url": {
 						"value": "[parameters('LS_SFTP_ADLS_PARQ_properties_typeProperties_url')]"
@@ -94,8 +157,29 @@
 					"LS_SFTP_SINK_PARQUT_properties_typeProperties_url": {
 						"value": "[parameters('LS_SFTP_SINK_PARQUT_properties_typeProperties_url')]"
 					},
+					"LS_SINK_SQLSRV_ADLS_properties_typeProperties_url": {
+						"value": "[parameters('LS_SINK_SQLSRV_ADLS_properties_typeProperties_url')]"
+					},
 					"RestApiService1_properties_typeProperties_url": {
 						"value": "[parameters('RestApiService1_properties_typeProperties_url')]"
+					},
+					"LS_LKPup_sqlsrv_adls_properties_typeProperties_server": {
+						"value": "[parameters('LS_LKPup_sqlsrv_adls_properties_typeProperties_server')]"
+					},
+					"LS_LKPup_sqlsrv_adls_properties_typeProperties_database": {
+						"value": "[parameters('LS_LKPup_sqlsrv_adls_properties_typeProperties_database')]"
+					},
+					"LS_LKPup_sqlsrv_adls_properties_typeProperties_userName": {
+						"value": "[parameters('LS_LKPup_sqlsrv_adls_properties_typeProperties_userName')]"
+					},
+					"LS_source_Sqlsrv_adls_properties_typeProperties_server": {
+						"value": "[parameters('LS_source_Sqlsrv_adls_properties_typeProperties_server')]"
+					},
+					"LS_source_Sqlsrv_adls_properties_typeProperties_database": {
+						"value": "[parameters('LS_source_Sqlsrv_adls_properties_typeProperties_database')]"
+					},
+					"LS_source_Sqlsrv_adls_properties_typeProperties_userName": {
+						"value": "[parameters('LS_source_Sqlsrv_adls_properties_typeProperties_userName')]"
 					}
 				}
 			},
