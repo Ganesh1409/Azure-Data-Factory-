@@ -1,0 +1,23 @@
+{
+	"name": "DS_SIK_ADLS_RAW_SRC_EXCEL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_SINK_RAW_SRC_EXCEL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@concat('excel/', formatDateTime(utcnow(),'yyyy'),'/', formatDateTime(utcnow(),'MM'),'/', formatDateTime(utcnow(),'dd'))",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
