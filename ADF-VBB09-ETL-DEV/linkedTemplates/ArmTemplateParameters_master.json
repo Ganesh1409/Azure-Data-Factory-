@@ -11,6 +11,9 @@
 		"DS_SINK_SQLSRV_ADLS_PRQT_accountKey": {
 			"value": ""
 		},
+		"LS_AZSQL_DB_password": {
+			"value": ""
+		},
 		"LS_LKPup_sqlsrv_adls_password": {
 			"value": ""
 		},
@@ -29,11 +32,32 @@
 		"LS_source_Sqlsrv_adls_password": {
 			"value": ""
 		},
+		"LS_ADLS_RAW_SRC_accountKey": {
+			"value": ""
+		},
+		"LS_SINK_ADLS_RAW_SRC_CSV_accountKey": {
+			"value": ""
+		},
+		"DS_SRC_ADLS_RAW_SRC_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_SNK_ADLS_RAW_SRC_CSV_accountKey": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://adlsdevvbrow09.dfs.core.windows.net"
 		},
 		"DS_SINK_SQLSRV_ADLS_PRQT_properties_typeProperties_url": {
 			"value": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"LS_AZSQL_DB_properties_typeProperties_server": {
+			"value": "sql-srvr-vb-dev09.database.windows.net"
+		},
+		"LS_AZSQL_DB_properties_typeProperties_database": {
+			"value": "sql-db-vb-dev"
+		},
+		"LS_AZSQL_DB_properties_typeProperties_userName": {
+			"value": "access-data-dev"
 		},
 		"LS_LKPup_sqlsrv_adls_properties_typeProperties_server": {
 			"value": "LAPTOP-EGV8I2D2"
@@ -67,6 +91,18 @@
 		},
 		"RestApiService1_properties_typeProperties_url": {
 			"value": "https://retoolapi.dev/QQnW7W/data"
+		},
+		"LS_ADLS_RAW_SRC_properties_typeProperties_url": {
+			"value": "https://adlsdevvbrow09.dfs.core.windows.net/"
+		},
+		"LS_SINK_ADLS_RAW_SRC_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"DS_SRC_ADLS_RAW_SRC_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevvbrow09.dfs.core.windows.net/"
+		},
+		"LS_SNK_ADLS_RAW_SRC_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevvbsource09.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""

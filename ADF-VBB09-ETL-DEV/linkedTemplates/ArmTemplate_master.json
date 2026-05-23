@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'DS_SINK_SQLSRV_ADLS_PRQT'"
 		},
+		"LS_AZSQL_DB_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_AZSQL_DB'"
+		},
 		"LS_LKPup_sqlsrv_adls_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_LKPup_sqlsrv_adls'"
@@ -39,6 +43,22 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_source_Sqlsrv_adls'"
 		},
+		"LS_ADLS_RAW_SRC_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_ADLS_RAW_SRC'"
+		},
+		"LS_SINK_ADLS_RAW_SRC_CSV_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SINK_ADLS_RAW_SRC_CSV'"
+		},
+		"DS_SRC_ADLS_RAW_SRC_CSV_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'DS_SRC_ADLS_RAW_SRC_CSV'"
+		},
+		"LS_SNK_ADLS_RAW_SRC_CSV_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SNK_ADLS_RAW_SRC_CSV'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevvbrow09.dfs.core.windows.net"
@@ -46,6 +66,18 @@
 		"DS_SINK_SQLSRV_ADLS_PRQT_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"LS_AZSQL_DB_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "sql-srvr-vb-dev09.database.windows.net"
+		},
+		"LS_AZSQL_DB_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sql-db-vb-dev"
+		},
+		"LS_AZSQL_DB_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "access-data-dev"
 		},
 		"LS_LKPup_sqlsrv_adls_properties_typeProperties_server": {
 			"type": "string",
@@ -91,6 +123,22 @@
 			"type": "string",
 			"defaultValue": "https://retoolapi.dev/QQnW7W/data"
 		},
+		"LS_ADLS_RAW_SRC_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevvbrow09.dfs.core.windows.net/"
+		},
+		"LS_SINK_ADLS_RAW_SRC_CSV_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
+		"DS_SRC_ADLS_RAW_SRC_CSV_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevvbrow09.dfs.core.windows.net/"
+		},
+		"LS_SNK_ADLS_RAW_SRC_CSV_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevvbsource09.dfs.core.windows.net/"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -124,6 +172,9 @@
 					"DS_SINK_SQLSRV_ADLS_PRQT_accountKey": {
 						"value": "[parameters('DS_SINK_SQLSRV_ADLS_PRQT_accountKey')]"
 					},
+					"LS_AZSQL_DB_password": {
+						"value": "[parameters('LS_AZSQL_DB_password')]"
+					},
 					"LS_SFTP_ADLS_PARQ_accountKey": {
 						"value": "[parameters('LS_SFTP_ADLS_PARQ_accountKey')]"
 					},
@@ -136,6 +187,18 @@
 					"LS_SINK_SQLSRV_ADLS_accountKey": {
 						"value": "[parameters('LS_SINK_SQLSRV_ADLS_accountKey')]"
 					},
+					"LS_ADLS_RAW_SRC_accountKey": {
+						"value": "[parameters('LS_ADLS_RAW_SRC_accountKey')]"
+					},
+					"LS_SINK_ADLS_RAW_SRC_CSV_accountKey": {
+						"value": "[parameters('LS_SINK_ADLS_RAW_SRC_CSV_accountKey')]"
+					},
+					"DS_SRC_ADLS_RAW_SRC_CSV_accountKey": {
+						"value": "[parameters('DS_SRC_ADLS_RAW_SRC_CSV_accountKey')]"
+					},
+					"LS_SNK_ADLS_RAW_SRC_CSV_accountKey": {
+						"value": "[parameters('LS_SNK_ADLS_RAW_SRC_CSV_accountKey')]"
+					},
 					"LS_LKPup_sqlsrv_adls_password": {
 						"value": "[parameters('LS_LKPup_sqlsrv_adls_password')]"
 					},
@@ -147,6 +210,15 @@
 					},
 					"DS_SINK_SQLSRV_ADLS_PRQT_properties_typeProperties_url": {
 						"value": "[parameters('DS_SINK_SQLSRV_ADLS_PRQT_properties_typeProperties_url')]"
+					},
+					"LS_AZSQL_DB_properties_typeProperties_server": {
+						"value": "[parameters('LS_AZSQL_DB_properties_typeProperties_server')]"
+					},
+					"LS_AZSQL_DB_properties_typeProperties_database": {
+						"value": "[parameters('LS_AZSQL_DB_properties_typeProperties_database')]"
+					},
+					"LS_AZSQL_DB_properties_typeProperties_userName": {
+						"value": "[parameters('LS_AZSQL_DB_properties_typeProperties_userName')]"
 					},
 					"LS_SFTP_ADLS_PARQ_properties_typeProperties_url": {
 						"value": "[parameters('LS_SFTP_ADLS_PARQ_properties_typeProperties_url')]"
@@ -162,6 +234,18 @@
 					},
 					"RestApiService1_properties_typeProperties_url": {
 						"value": "[parameters('RestApiService1_properties_typeProperties_url')]"
+					},
+					"LS_ADLS_RAW_SRC_properties_typeProperties_url": {
+						"value": "[parameters('LS_ADLS_RAW_SRC_properties_typeProperties_url')]"
+					},
+					"LS_SINK_ADLS_RAW_SRC_CSV_properties_typeProperties_url": {
+						"value": "[parameters('LS_SINK_ADLS_RAW_SRC_CSV_properties_typeProperties_url')]"
+					},
+					"DS_SRC_ADLS_RAW_SRC_CSV_properties_typeProperties_url": {
+						"value": "[parameters('DS_SRC_ADLS_RAW_SRC_CSV_properties_typeProperties_url')]"
+					},
+					"LS_SNK_ADLS_RAW_SRC_CSV_properties_typeProperties_url": {
+						"value": "[parameters('LS_SNK_ADLS_RAW_SRC_CSV_properties_typeProperties_url')]"
 					},
 					"LS_LKPup_sqlsrv_adls_properties_typeProperties_server": {
 						"value": "[parameters('LS_LKPup_sqlsrv_adls_properties_typeProperties_server')]"
@@ -184,6 +268,26 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "ADF-VBB09-ETL-DEV_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'ADF-VBB09-ETL-DEV_ArmTemplate_0')]"
+			]
 		}
 	]
 }
