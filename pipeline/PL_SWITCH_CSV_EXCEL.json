@@ -84,7 +84,17 @@
 									},
 									"userProperties": [],
 									"typeProperties": {
-										"waitOnCompletion": true
+										"pipeline": {
+											"referenceName": "PL_EXCEL",
+											"type": "PipelineReference"
+										},
+										"waitOnCompletion": true,
+										"parameters": {
+											"Trigger": {
+												"value": "@pipeline().parameters.Trigger",
+												"type": "Expression"
+											}
+										}
 									}
 								}
 							]

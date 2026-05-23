@@ -74,15 +74,28 @@
 							]
 						},
 						{
-							"value": "API",
+							"value": "sql",
 							"activities": [
 								{
-									"name": "Wait1",
-									"type": "Wait",
+									"name": "EXEC_SQL",
+									"type": "ExecutePipeline",
 									"dependsOn": [],
+									"policy": {
+										"secureInput": false
+									},
 									"userProperties": [],
 									"typeProperties": {
-										"waitTimeInSeconds": 1
+										"pipeline": {
+											"referenceName": "PL_SQlsvr_Adls",
+											"type": "PipelineReference"
+										},
+										"waitOnCompletion": true,
+										"parameters": {
+											"Trigger": {
+												"value": "@pipeline().parameters.Trigger",
+												"type": "Expression"
+											}
+										}
 									}
 								}
 							]
