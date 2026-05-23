@@ -1,0 +1,44 @@
+{
+	"name": "DS_SINK_ADLS_RAW_SRC_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SNK_ADLS_RAW_SRC_CSV",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@concat('csv/',\nformatDateTime(utcnow(),'yyyy'),'/',\nformatDateTime(utcnow(),'MM'),'/',\nformatDateTime(utcnow(),'dd'))",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "customer_unique_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "customer_zip_code_prefix",
+				"type": "UTF8"
+			},
+			{
+				"name": "customer_city",
+				"type": "UTF8"
+			},
+			{
+				"name": "customer_state",
+				"type": "UTF8"
+			}
+		]
+	}
+}
