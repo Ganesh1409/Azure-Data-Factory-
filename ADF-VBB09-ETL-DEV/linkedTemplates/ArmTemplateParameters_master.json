@@ -104,6 +104,9 @@
 		"LS_SNK_ADLS_RAW_SRC_CSV_properties_typeProperties_url": {
 			"value": "https://adlsdevvbsource09.dfs.core.windows.net/"
 		},
+		"Tr_sample_csv_properties_PL1_MASTER_parameters_Trigger": {
+			"value": "Tr_sample_csv"
+		},
 		"containerUri": {
 			"value": ""
 		},
